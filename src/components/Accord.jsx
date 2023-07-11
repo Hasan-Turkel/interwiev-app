@@ -1,14 +1,16 @@
+import { useState } from "react"
 import { arrowdown } from "../helpers/icons"
 import { arrowup } from "../helpers/icons"
 
 const Accord = ({id,  question, answer}) => {
+    const [flag, setFlag] = useState(true);
   return (
     <article>
-        <div><h3>{id}. {question}</h3>
-        <aside> {arrowup}
-        {arrowdown}</aside>
+        <div><h2>{id}. {question}</h2>
+        <aside onClick={()=> setFlag(!flag)}> {flag? (<span>{arrowdown}</span>): (<span>{arrowup}</span>)}
+        </aside>
        </div>
-        <p>{answer}</p>
+        {!flag && <h3>{answer}</h3>}
     </article>
     
   )

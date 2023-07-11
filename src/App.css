@@ -6,17 +6,39 @@
   margin: 5px;
 }
 
+body{
+  background-color: rgba(9, 198, 223, 0.438);
+  background-position: center;
+  & h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: chocolate;
+    text-shadow: 3px 3px 5px black;
+    font-size: 50px;
+  }
+}
+
 article{
-  border: 1px solid black;
+  background-color: rgba(56, 225, 231, 0.918);
+  box-shadow: 3px 3px 10px red;
   width: 50%;
   min-width: 300px;
-  margin: 10px auto;
+  margin: 20px auto;
+  & h3{
+    color:crimson;
+    text-align: justify;
+  }
   & div{
     display: flex;
     justify-content: space-between;
+    & h2{
+      text-align: left;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: brown;
+    }
     & aside{
       cursor: pointer;
      
     }
   }
+ 
 }

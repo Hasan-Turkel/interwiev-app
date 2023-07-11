@@ -3,7 +3,7 @@
 const Header = () => {
   return (
     <header>
-        <h1>REACT Interview Ouestions And Answers</h1>
+        <h1>REACT Interview Questions And Answers</h1>
         </header>
   )
 }
