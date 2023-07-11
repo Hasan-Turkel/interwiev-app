@@ -1,8 +1,13 @@
+import data from "../helpers/data";
+import Accord from "./Accord";
 
+console.log(data);
 
 const Question = () => {
   return (
-    <div>Question</div>
+    <main>
+      {data.map((data, id)=>( <Accord key={id} {...data}/>))} 
+    </main>
   )
 }
 
